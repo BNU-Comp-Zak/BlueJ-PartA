@@ -15,6 +15,8 @@ public class Student
     private String id;
     // the amount of credits for study taken so far
     private int credits;
+    // the course the student is taken
+    private ArrayList<Course> students;
     
     /**
      * Create a new student with a given name and ID number.
@@ -84,4 +86,14 @@ public class Student
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
     }
+    
+    /**
+     * Add's a course to the student
+     */
+    public void addCourse(String courseCode, String title)
+    {
+    
+    }
+    
+
 }
