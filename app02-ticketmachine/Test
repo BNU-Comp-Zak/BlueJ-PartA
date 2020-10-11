@@ -1,0 +1,20 @@
+Ticket ticket1 = new Ticket("High Wycombe", 330);
+TicketMachine ticketMa1 = new TicketMachine(100);
+ticket1.print();
+Ticket High Wycombe Price : 330 Issued Sun Oct 11 14:42:35 BST 2020
+ticketMa1.selectHighWycombeTicket();
+ticketMa1.insertMoney(500);
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 100 cents.
+##################
+
+ticketMa1.refundBalance()
+    returned int 400
+ticketMa1.getPrice()
+    returned int 100
+ticketMa1.selectHighWycombeTicket();
+ticketMa1.getPrice()
+    returned int 100
