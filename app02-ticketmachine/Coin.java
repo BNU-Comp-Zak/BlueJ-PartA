@@ -6,6 +6,7 @@
  * @version 11/10/2020
  */
 
+//Creates a constant class
  public enum Coin
     {
         P10 (10),
