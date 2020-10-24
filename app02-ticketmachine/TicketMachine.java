@@ -40,7 +40,7 @@ public class TicketMachine
         balance = 0;
         total = 0;
         
-        //Constructor for creating th3 new tickets
+        //Constructor for creating the new tickets
         aylesburyTicket = new Ticket("Aylesbury", 220);
         amershamTicket = new Ticket("Amersham", 300);
         highWycombeTicket = new Ticket("High Wycome", 330);
@@ -83,6 +83,14 @@ public class TicketMachine
         }
     }
     
+    /**
+     * Checks the Customer has inputted 10p 20p £1 or £2
+     */
+    public void checkCoin(int amount)
+    {
+        
+    
+    }
     //Changes the selected ticket to one of the stops
     public void selectAylesburyTicket()
     {
