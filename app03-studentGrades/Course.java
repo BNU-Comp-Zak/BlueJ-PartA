@@ -43,7 +43,7 @@ public class Course
         module1 = new Module("CO461", "3D Modelling");
         module2 = new Module("CO450", "Computer Architecture");
         module3 = new Module("CO459", "Game Design");
-        module4 = new Module("CO452", "Programming Comcepts");
+        module4 = new Module("CO452", "Programming Concepts");
     }
 
     /**

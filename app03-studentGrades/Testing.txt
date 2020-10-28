@@ -1,0 +1,15 @@
+Student student1 = new Student("Zak Smith", "22010861");
+Course course1 = new Course("Game Development", "000001");
+student1.addCourse(course1);
+course1.addmodule("3D Modelling", "CO461");
+course1.addmodule("Programming Concepts", "CO452");
+student1.print();
+Zak Smith, student ID: 22010861, credits: 0
+A Course needs 4 moduals
+Current number of modules: 2
+course1.addmodule("Game Design", "CO459");
+course1.addmodule("Computer Architecture", "CO450");
+student1.print();
+Zak Smith, student ID: 22010861, credits: 0
+Course: Computing, Course ID: CO0001
+
