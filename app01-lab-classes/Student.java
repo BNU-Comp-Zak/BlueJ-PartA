@@ -18,6 +18,9 @@ public class Student
     // the course the student is taken
     private ArrayList<Course> students;
     
+    
+    private Course course;
+    
     /**
      * Create a new student with a given name and ID number.
      */

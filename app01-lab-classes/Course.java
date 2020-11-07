@@ -15,14 +15,18 @@ public class Course
     /**
      * Creates a new course
      */
-    public Course()
+    public Course(String title, String codeNumber)
     {
-        codeNumber = "G400";
-        title = "Computing";
+        this.codeNumber = codeNumber;
+        this.title = title;
         
         
     }
-
+    
+    public void print()
+    {
+        System.out.println("Course: " + title + "" + codeNumber);
+    }
     
     }
 

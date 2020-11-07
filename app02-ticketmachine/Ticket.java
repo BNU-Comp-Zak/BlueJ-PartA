@@ -27,8 +27,19 @@ public class Ticket
         issueDateTime = new Date();
     }
     
+    public int getPrice()
+    {
+        return price;
+    
+    }
+    
+    public String getDestination()
+    {
+        return destination;
+    }
+    
     /**
-     * 
+     * Prints the date, destination and price of a ticket
      */
     public void print()
     {

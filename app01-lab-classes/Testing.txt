@@ -1,0 +1,32 @@
+LabClass co452Lab = new LabClass(3);
+co452Lab.setRoom("G301");
+LabClass labClass1 = new LabClass(3)
+Student student1 = new Student("Zak", "12345");
+Student student2 = new Student("Will", "67891");
+Student student3 = new Student("Peter", "459693");
+co452Lab.enrollStudent(student1);
+co452Lab.enrollStudent(student2);
+co452Lab.enrollStudent(student3);
+co452Lab.numberOfStudents()
+    returned int 3
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday 29th September 2020");
+student1.getCredits()
+    returned int 0
+student2.getCredits()
+    returned int 0
+student3.getCredits()
+    returned int 0
+student1.addCredits(44);
+student2.getCredits()
+    returned int 0
+student2.addCredits(44);
+student3.addCredits(12);
+student1.getCredits()
+    returned int 44
+student2.getCredits()
+    returned int 44
+student3.getCredits()
+    returned int 12
+student1.print();

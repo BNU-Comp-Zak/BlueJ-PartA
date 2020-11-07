@@ -43,7 +43,7 @@ public class TicketMachine
         //Constructor for creating the new tickets
         aylesburyTicket = new Ticket("Aylesbury", 220);
         amershamTicket = new Ticket("Amersham", 300);
-        highWycombeTicket = new Ticket("High Wycome", 330);
+        highWycombeTicket = new Ticket("High Wycombe", 330);
         
         issuedTicket = null;
     }
@@ -147,5 +147,15 @@ public class TicketMachine
         amountToRefund = balance;
         balance = 0;
         return amountToRefund;
+    }
+    
+    public void printTickets()
+    {
+        System.out.println("The avalible destinations are: ");
+        System.out.println();
+        aylesburyTicket.print();
+        amershamTicket.print();
+        highWycombeTicket.print();
+        
     }
 }
