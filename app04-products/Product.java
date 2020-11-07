@@ -1,8 +1,10 @@
+import java.util.*;
+import java.lang.String;
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Zak Smith
+ * @version 1.0 07/11/20
  */
 public class Product
 {
@@ -41,7 +43,43 @@ public class Product
     {
         return name;
     }
-
+    
+       /**
+     * This will be used to change the name of a product
+     * based on the id.
+     */
+    public void replaceName(String replacementName)
+    {
+        this.name = replacementName;
+    }
+    
+    /**
+     * Check if the stock quantity is low.
+     * If its low it will print out a message.
+     */
+    public void getLow()
+    {
+        if(checkLow() == true)
+        {
+            System.out.println("This product has low amounts of stock: " + id + " " +
+            getQuantity() + " in stock.");
+        }
+    }
+    
+    public boolean checkLow()
+    {
+        int low = 3;
+        
+        if(getQuantity() <= low)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
     /**
      * @return The quantity in stock.
      */

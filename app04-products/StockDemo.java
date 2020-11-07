@@ -36,10 +36,10 @@ public class StockDemo
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void deliveryDemo()
+    public void demoDelivery()
     {
         // Show details of all of the products.
-        manager.printProductDetails();
+        manager.printAllProducts();
         // Take delivery of 5 items of one of the products.
         manager.delivery(100, 5);
         manager.delivery(101, 3);
@@ -48,7 +48,7 @@ public class StockDemo
         manager.delivery(104, 7);
         manager.delivery(105, 9);
         manager.delivery(106, 1);
-        manager.printProductDetails();
+        manager.printAllProducts();
     }
     
     /**
