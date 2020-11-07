@@ -1,0 +1,76 @@
+StockManager Manager = new StockManager();
+StockDemo Demo = new StockDemo(Manager);
+Manager.printAllProducts();
+100: Clock Radio stock level: 0
+101: Mobile Phone stock level: 0
+102: Microwave Oven stock level: 0
+103: Samsung Galaxy S8 stock level: 0
+104: Samsung Galaxy S10 stock level: 0
+105: Samsung Galaxy S20 stock level: 0
+106: Apple MacBook Pro stock level: 0
+Manager.delivery(105, 3);
+Product Thats Delivered: 105: Samsung Galaxy S20 stock level: 3
+Manager.delivery(100, 7);
+Product Thats Delivered: 100: Clock Radio stock level: 7
+Manager.delivery(106, 10);
+Product Thats Delivered: 106: Apple MacBook Pro stock level: 10
+Manager.delivery(107, 3);
+Product ID: 107 Has not been found!
+Manager.printAllProducts();
+100: Clock Radio stock level: 7
+101: Mobile Phone stock level: 0
+102: Microwave Oven stock level: 0
+103: Samsung Galaxy S8 stock level: 0
+104: Samsung Galaxy S10 stock level: 0
+105: Samsung Galaxy S20 stock level: 3
+106: Apple MacBook Pro stock level: 10
+Demo.demoDelivery();
+100: Clock Radio stock level: 7
+101: Mobile Phone stock level: 0
+102: Microwave Oven stock level: 0
+103: Samsung Galaxy S8 stock level: 0
+104: Samsung Galaxy S10 stock level: 0
+105: Samsung Galaxy S20 stock level: 3
+106: Apple MacBook Pro stock level: 10
+Product Thats Delivered: 100: Clock Radio stock level: 12
+Product Thats Delivered: 101: Mobile Phone stock level: 3
+Product Thats Delivered: 102: Microwave Oven stock level: 6
+Product Thats Delivered: 103: Samsung Galaxy S8 stock level: 2
+Product Thats Delivered: 104: Samsung Galaxy S10 stock level: 7
+Product Thats Delivered: 105: Samsung Galaxy S20 stock level: 12
+Product Thats Delivered: 106: Apple MacBook Pro stock level: 11
+100: Clock Radio stock level: 12
+101: Mobile Phone stock level: 3
+102: Microwave Oven stock level: 6
+103: Samsung Galaxy S8 stock level: 2
+104: Samsung Galaxy S10 stock level: 7
+105: Samsung Galaxy S20 stock level: 12
+106: Apple MacBook Pro stock level: 11
+Manager.sellProduct(100);
+100: Clock Radio stock level: 12
+100: Clock Radio stock level: 11
+Manager.sellProduct(106);
+106: Apple MacBook Pro stock level: 11
+106: Apple MacBook Pro stock level: 10
+Manager.sellProduct(103);
+103: Samsung Galaxy S8 stock level: 2
+103: Samsung Galaxy S8 stock level: 1
+Manager.sellProduct(104);
+104: Samsung Galaxy S10 stock level: 7
+104: Samsung Galaxy S10 stock level: 6
+Manager.removeProduct(100);
+Manager.printAllProducts();
+101: Mobile Phone stock level: 3
+102: Microwave Oven stock level: 6
+103: Samsung Galaxy S8 stock level: 1
+104: Samsung Galaxy S10 stock level: 6
+105: Samsung Galaxy S20 stock level: 12
+106: Apple MacBook Pro stock level: 10
+Manager.changeName(101, "Android Phone");
+Manager.printListProduct();
+Manager.searchProduct("Microwave Oven");
+102: Microwave Oven stock level: 6
+Manager.searchProduct("Samsung");
+103: Samsung Galaxy S8 stock level: 1
+104: Samsung Galaxy S10 stock level: 6
+105: Samsung Galaxy S20 stock level: 12
