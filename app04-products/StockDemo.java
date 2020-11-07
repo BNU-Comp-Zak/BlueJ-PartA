@@ -5,6 +5,9 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * 
+ * edited by: Zak Smith
+ * Date: 07/11/20
  */
 public class StockDemo
 {
@@ -15,12 +18,17 @@ public class StockDemo
      * Create a StockManager and populate it with a few
      * sample products.
      */
-    public StockDemo()
+    public StockDemo(StockManager manager)
     {
-        manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        this.manager = manager;
+        
+        manager.addProduct(new Product(100, "Clock Radio"));
+        manager.addProduct(new Product(101, "Mobile Phone"));
+        manager.addProduct(new Product(102, "Microwave Oven"));
+        manager.addProduct(new Product(103, "Samsung Galaxy S8"));
+        manager.addProduct(new Product(104, "Samsung Galaxy S10"));
+        manager.addProduct(new Product(105, "Samsung Galaxy S20"));
+        manager.addProduct(new Product(106, "Apple MacBook Pro"));
     }
     
     /**
@@ -28,12 +36,18 @@ public class StockDemo
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    public void deliveryDemo()
     {
         // Show details of all of the products.
         manager.printProductDetails();
         // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
+        manager.delivery(100, 5);
+        manager.delivery(101, 3);
+        manager.delivery(102, 6);
+        manager.delivery(103, 2);
+        manager.delivery(104, 7);
+        manager.delivery(105, 9);
+        manager.delivery(106, 1);
         manager.printProductDetails();
     }
     
@@ -69,7 +83,7 @@ public class StockDemo
         }
     }
     
-    /**
+/**
      * Get the product with the given id from the manager.
      * An error message is printed if there is no match.
      * @param id The ID of the product.
